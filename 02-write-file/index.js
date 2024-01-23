@@ -25,6 +25,7 @@ userConsole.on('line', (input) => {
 })
 
 userConsole.on('close', () => {
-  console.log(farewellPhrase)
   fileStream.end()
+  console.log(farewellPhrase)
+  process.exit();
 })
